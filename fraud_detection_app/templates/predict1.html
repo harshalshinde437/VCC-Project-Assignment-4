@@ -1,0 +1,7 @@
+<form action="{% url 'predict_fraud' %}" method="post">
+    {% csrf_token %}
+    <label for="v1">V1:</label>
+    <input type="text" name="V1" id="v1" required><br>
+    <!-- Repeat for other features -->
+    <input type="submit" value="Submit">
+</form>
